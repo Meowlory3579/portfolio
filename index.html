@@ -13,7 +13,7 @@
   <body>
     <!--Beginning: Header-->
     <header>
-      <img src="./assets/images/Logo.JPG" alt="Logo"/>
+      <img src="./assets/images/logo-blue-small.jpg" alt="Logo"/>
         <ul>
           <li>
             <a href="./#about">About</a>
@@ -33,15 +33,30 @@
 
     <!--Beginning: Home-->
     <section class="home">
-      <img src="./assets/images/Mallory-Headshot.JPG" alt="headshot"/>
-        <span class="name">
-          Hi,
-          <br>
-          I'm Mallory Howard
-        </span> 
-          <p>a blah blah blah and full-stack web developer in-training</p>
-    </section>    
+      <!-- Beginning: Background Image. Note: the source is in the CSS -->
+      <div class="home-back">
+        <!--Beginning: Home Text-->
+        <div class="home-text">  
+          <aside>
+           <span class="name">
+            Hi,
+            <br>
+            I'm Mallory Howard
+           </span> 
+           <p>a blah blah blah and full-stack web developer in-training</p>
+          </aside>
+          <!--Beginning: Home Image-->
+          <div class="home-image">
+           <img src="./assets/images/Mallory-Headshot.JPG" alt="headshot"/>
+          </div>  
+          <!--End: Home Image-->
+        </div> 
+        <!--End: Home Text--> 
+     </div>
+      <!-- End: Background Image. Note: the source is in the CSS -->
+    </section>
     <!--End: Home-->
+
 
     <!--Beginning: Main-->
     <section class="main">
@@ -50,29 +65,31 @@
       <section class="about" id="about">
         <h2>About Me</h2>
         <hr>
-            <section class="about-me">
-                <h3>Get to know me!</h3> 
-                <p>I'm a results-oriented specialist with over 10 years of experience in fostering partner and client relationships, project management, and software integration development.</p>
-                <br>
-                <p>Looking to expand my skillset...Results-oriented specialist with over 10 years of experience in fostering partner and client relationships, project management, and software integration development. </p>
-                <br>
-                <p>When I'm not...Results-oriented specialist with over 10 years of experience in fostering partner and client relationships, project management, and software integration development. </p>
-            </section>
-            <section class="skills">
-                <h3>Skills</h3>
-                    <ul>
-                        <li>HTML</li> 
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Git</li>
-                        <li>MySQL</li> 
-                        <li>MISMO XML</li> 
-                    </ul>    
-                <br>    
-                <h3>Languages</h3>
-                <p>French: CEFR-level B1 (intermediate) </p>
-                <p>German: CEFR-level A1 (beginner) </p>
-            </section> 
+        <div class="about-content">
+          <div class="about-me">
+            <h3>Get to know me!</h3> 
+            <p>I'm a results-oriented specialist with over 10 years of experience in fostering partner and client relationships, project management, and software integration development.</p>
+            <br>
+            <p>Looking to expand my skillset...Results-oriented specialist with over 10 years of experience in fostering partner and client relationships, project management, and software integration development. </p>
+            <br>
+            <p>When I'm not...Results-oriented specialist with over 10 years of experience in fostering partner and client relationships, project management, and software integration development. </p>
+          </div>
+          <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML</li> 
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+              <li>MySQL</li> 
+              <li>MISMO XML</li> 
+            </ul>    
+            <br>    
+            <h3>Languages</h3>
+            <p>French: CEFR-level B1 (intermediate) </p>
+            <p>German: CEFR-level A1 (beginner) </p>
+          </div> 
+        </div>    
       </section>   
       <!--End: About-->
    
@@ -80,35 +97,35 @@
       <section class="projects" id="projects">
         <h2>Projects</h2>
         <hr>
-        <section class="project-1">
-          <a href="https://meowlory3579.github.io/module-one-challenge/" target="_blank"><img src="./assets/images/code-banner-1.JPG" alt="updateme"></a>
-          <div class="horiseon">
-            <p id="hori">Horiseon Services</p>
-            <p id="lang">HTML/CSS</p>
-          </div>  
-        </section>
-        <!--Beginning: adding div for flexbox behavior-->
-        <div class="flex-box">
-          <section class="card">
-            <img src="./assets/images/code.jpg" alt="update me" />
-            <div class="coming-soon">
-              <p>Coming Soon</p>
+        <div class="all-projects">
+          <div class="project-1">
+            <a href="https://meowlory3579.github.io/module-one-challenge/" target="_blank"><img src="./assets/images/code-banner-1.JPG" alt="updateme"></a>
+            <div class="horiseon">
+              <p id="hori">Horiseon Services</p>
+              <p id="lang">HTML/CSS</p>
+            </div>  
+          </div>
+          <div class="other-projects">
+            <div class="card">
+              <img src="./assets/images/code.jpg" alt="update me" />
+              <div class="coming-soon">
+                <p>Coming Soon</p>
+              </div>
             </div>
-          </section>
-          <section class="card">
-            <img src="./assets/images/code.jpg" alt="update me" />
-            <div class="coming-soon">
-              <p>Coming Soon</p>
+            <div class="card">
+              <img src="./assets/images/code.jpg" alt="update me" />
+              <div class="coming-soon">
+                <p>Coming Soon</p>
+              </div>
             </div>
-          </section>
-          <section class="card">
-            <img src="./assets/images/code.jpg" alt="update me" />
-            <div class="coming-soon">
-              <p>Coming Soon</p>
+            <div class="card">
+              <img src="./assets/images/code.jpg" alt="update me" />
+              <div class="coming-soon">
+                <p>Coming Soon</p>
+              </div>
             </div>
-          </section>
+          </div>
         </div>
-        <!--End: adding div for flexbox behavior-->
       </section> 
       <!--End: Projects-->   
 
@@ -116,7 +133,7 @@
       <section class="experience" id="experience">
         <h2>Experience</h2>
         <hr>
-        <section class="jobs">
+        <div class="jobs">
          <p class="job-title">Partner Relationship Manager</p>
          <p class="job-name">Docutech, a First American Company - February 2022 to Present </p>
             <ul>
@@ -134,23 +151,20 @@
               <li>Create a project plan for each client, detailing the tasks that need to be completed for the timely use of the IDS system.</li>
               <li>Proactively educate clients on how to use the IDS software and provide troubleshooting support during the client onboarding process.</li>
           </ul>
-        </section> 
+        </div> 
       </section>
       <!--End: Experience-->      
 
       <!--Beginning: Contact-->   
       <section class="contact" id="contact">
-        <h2>Let's Connect</h2>
+        <h2>Let's Connect!</h2>
         <hr>
-        <section class="social-icons">
-              <a href="https://www.linkedin.com/in/mallory-howard-202359145" target="_blank"><i class="bi bi-linkedin" style="font-size: 2rem; color: black;"></i>
-              </a>
-              <a href="mailto:mallory.howard13@gmail.com" target="_blank"><i class="bi bi-envelope" style="font-size: 2rem; color: black;"></i>
-              </a>
-              <a href="https://github.com/Meowlory3579" target="_blank"><i class="bi bi-github" style="font-size: 2rem; color: black;"></i>
-              </a>
-
-        </section>  
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/mallory-howard-202359145" target="_blank"><i class="bi bi-linkedin icon"></i></a>
+          <a href="mailto:mallory.howard13@gmail.com" target="_blank"><i class="bi bi-envelope icon"></i></a>
+          <a href="https://www.instagram.com/the_childs_adventures/" target="_blank"><i class="bi bi-instagram icon"></i></a>
+          <a href="https://github.com/Meowlory3579" target="_blank"><i class="bi bi-github icon"></i></a>
+        </div>  
       </section>
       <!--End: Contact-->   
 
