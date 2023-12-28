@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+  }
+
+
+/* Beginning: Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: teal;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header img {
+    max-width: 80px;
+}
+
+header ul {
+    padding-top: 25px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    list-style-type: none;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* End: Header */
+
+
+/* Beginning: Home*/
+.home {
+    margin: 200px 200px 50px 200px;
+    font-size: 24px;
+}
+
+.home img {
+    max-height: 400px;
+    float: right;
+    margin-right: 50px
+}
+
+.name {
+    font-size: 48px;
+    font-weight: bold;
+}
+/* End: Home*/
+
+
+/* Beginning: Main*/
+.main {
+    font-size: 20px;
+    margin: 100px;
+}
+
+.main h2 {
+    text-align: center;
+}
+
+hr {
+    width: 15%;
+    margin: auto;
+}
+/* End: Main*/
+
+
+/* Beginning: About*/ 
+.about {
+    padding: 20px 0px;  /*Make a variable*/
+}
+
+.about-me {
+    width: 45%;
+    display: inline-block;
+    padding-top: 15px; /*Make a variable*/
+}
+
+.skills {
+    width: 35%;
+    display: inline-block;
+    float: right;
+    padding-top: 15px; /*Make a variable*/
+}
+
+.skills ul {
+    list-style-type: none;
+}
+/* End: About*/
+
+
+/* Beginning: Projects*/
+.projects {
+    padding: 20px 0px;  /*Make a variable*/
+}
+
+.project-1 {
+    display: block;
+    margin: 15px auto 20px;
+    position: relative;
+}
+
+.project-1 img {
+    border: 10px solid teal;
+    width: 100%;
+}
+
+.horiseon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: teal;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#hori {
+    font-weight: bold;
+}
+
+#lang {
+    font-size: 14px;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.card {
+    flex: 0 0 400px;
+    position: relative;
+}
+  
+.card img {
+    width: 100%;
+    border: 10px solid teal;
+}
+
+.coming-soon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: teal;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* End: Projects*/
+
+
+/* Beginning: Experience*/
+.experience {
+    padding: 20px 0px;  /*Make a variable*/
+}
+
+.jobs {
+    padding-top: 15px; /*Make a variable*/
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.job-name {
+    font-style: italic;
+}
+
+.experience ul {
+    padding-top: 5px;
+    padding-left: 50px;
+}
+/* End: Experience*/
+
+/* Beginning: Contact*/
+.contact {
+    padding: 20px 0px;  /*Make a variable*/
+}
+
+.social-icons {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* End: Contact*/
+
+
+
+/* Beginning: Footer */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+/* End: Footer */
