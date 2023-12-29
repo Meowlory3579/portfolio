@@ -1,7 +1,14 @@
+:root {
+    --accent-color: teal;
+    --section-padding: 20px 0px;
+    --header-top-padding: 15px;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -17,7 +24,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: teal; /*Make a variable*/
+    background-color: var(--accent-color);
     color: #fff;
     padding: 10px 20px;
 }
@@ -30,7 +37,6 @@ header ul {
     padding-top: 33px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 22px;
     list-style-type: none;
 }
@@ -103,14 +109,15 @@ hr {
 
 /* Beginning: About*/ 
 .about {
-    padding: 20px 0px;  /*Make a variable*/
+    padding: var(--section-padding);
+    margin: 1% 0 0 0;
 }
 
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30%;
-    padding-top: 15px; /*Make a variable*/
+    padding-top: var(--header-top-padding);
 }
 
 .skills ul {
@@ -121,14 +128,14 @@ hr {
 
 /* Beginning: Projects*/
 .projects {
-    padding: 20px 0px;  /*Make a variable*/
+    padding: var(--section-padding);
 }
 
 .all-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 15px auto 20px;
+    margin: var(--header-top-padding) auto 20px;
 }
 
 .project-1 {
@@ -136,7 +143,7 @@ hr {
 }
 
 .project-1 img {
-    border: 10px solid teal; /*Make a variable*/
+    border: 10px solid var(--accent-color);
     width: 100%;
 }
 
@@ -144,7 +151,7 @@ hr {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: teal; /*Make a variable*/
+    background-color: var(--accent-color);
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -170,7 +177,7 @@ hr {
 }
 
 .card img {
-    border: 10px solid teal; /*Make a variable*/
+    border: 10px solid var(--accent-color);
     width: 100%;
 }
 
@@ -178,7 +185,7 @@ hr {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: teal; /*Make a variable*/
+    background-color: var(--accent-color);
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -188,11 +195,11 @@ hr {
 
 /* Beginning: Experience*/
 .experience {
-    padding: 20px 0px;  /*Make a variable*/
+    padding: var(--section-padding);
 }
 
 .jobs {
-    padding-top: 15px; /*Make a variable*/
+    padding-top: var(--header-top-padding);
 }
 
 .job-title {
@@ -212,7 +219,7 @@ hr {
 
 /* Beginning: Contact*/
 .contact {
-    padding: 20px 0px;  /*Make a variable*/
+    padding: var(--section-padding);
 }
 
 .social-icons {
@@ -224,7 +231,7 @@ hr {
 
 .icon {
     font-size: 2rem;
-    color: teal; /*Make a variable*/
+    color: var(--accent-color);
 }
 /* End: Contact*/
 
@@ -234,20 +241,23 @@ hr {
 footer {
     padding: 30px;
     clear: both;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+}
+
+.fa-solid {
+    margin: 1px;
+    color: var(--accent-color);
 }
 /* End: Footer */
 
 
 @media screen and (max-width: 768px) {
     .home-text {
-        font-size: 22px;
-        color: blue;
+        font-size: 20px;
     }
     
     .name {
-        font-size: 36px;
+        font-size: 30px;
         font-weight: bold;
     }
     
@@ -277,7 +287,6 @@ footer {
 @media screen and (max-width: 480px) {
     .home-text {
         font-size: 20px;
-        color: pink;
     }
     
     .name {
@@ -286,6 +295,6 @@ footer {
     }
     
     .home-image img {
-        max-height: 200px;
+        max-height: 250px;
     }
 }
