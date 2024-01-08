@@ -52,6 +52,7 @@ header a {
 }
 /* End: Header */
 
+
 /* Beginning: Home*/
 .home {
     display: flex;
@@ -217,6 +218,7 @@ hr {
 }
 /* End: Experience*/
 
+
 /* Beginning: Contact*/
 .contact {
     padding: var(--section-padding);
@@ -236,7 +238,6 @@ hr {
 /* End: Contact*/
 
 
-
 /* Beginning: Footer */
 footer {
     padding: 30px;
@@ -251,6 +252,7 @@ footer {
 /* End: Footer */
 
 
+/* Beginning: Media Screen queries */
 @media screen and (max-width: 768px) {
     .home-text {
         font-size: 20px;
@@ -298,3 +300,4 @@ footer {
         max-height: 250px;
     }
 }
+/* End: Media Screen queries */

@@ -18,7 +18,7 @@ GIVEN I need to sample a potential employee's previous work
 * WHEN I resize the page or view the site on various screens and devices, THEN I am presented with a responsive layout that adapts to my viewport
 
 ## The following image demonstrates the web application's appearance and functionality
-![Webpage titled "Mallory Howard | Portfolio" featuring a Logo and "About", "Projects", "Experience", and "Contact" hyperlinks in heading, with an introduction and photo of Mallory in the body.](https://github.com/Meowlory3579/portfolio/blob/main/assets/images/website-image.jpg)
+![Webpage titled "Mallory Howard | Portfolio" featuring a Logo and "About", "Projects", "Experience", and "Contact" hyperlinks in heading, with an introduction and photo of Mallory in the body.](https://github.com/Meowlory3579/portfolio/blob/main/assets/images/readme-image.jpg)
 
 ## Link to Deployed Application
 https://meowlory3579.github.io/portfolio/
